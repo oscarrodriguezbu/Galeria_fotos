@@ -1,0 +1,14 @@
+{{!-- para que el usuario pueda ver en una vista, las imagenes disponibles en su aplicacion --}}
+
+
+
+<!-- Slider main container -->
+<div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+        {{#each photos}}
+        <img src="{{imageURL}} " alt="" class="swiper-slide">
+        {{/each}}
+    </div>
+    {{!-- add pagination --}}
+    <div class="swiper-pagination"></div>
+</div>
